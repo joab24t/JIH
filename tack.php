@@ -33,7 +33,7 @@ if (isset($_POST["message"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tack för ditt meddelande – Elias, junior webbutvecklare</title>
   <meta name="description" content="Bekräftelse på att ditt meddelande till Elias har skickats.">
-  <!-- Länk till CSS- och JS-filer (defer kör JS efter att HTML laddats) -->
+  <!-- Koppling till CSS och JavaScript -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
@@ -43,14 +43,12 @@ if (isset($_POST["message"])) {
   <header class="site-header">
     <p class="site-header__name">Elias</p>
     <nav class="main-nav" aria-label="Huvudmeny">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kompetens.html">Kompetens</a></li>
-      </ul>
+     <a class="main-nav__link" href="index.html">Om mig</a> |
+      <a class="main-nav__link" href="kompetens.html">Kompetens</a> |
+      <a class="main-nav__link" href="projekt.html">Projekt</a> |
+      <a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a> |
+      <a class="main-nav__link" href="referenser.html">Referenser</a> |
+      <a class="main-nav__link" href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
@@ -59,7 +57,7 @@ if (isset($_POST["message"])) {
 
     
     <section class="thanks">
-      <p class="thanks__text">Hej <?php echo $name; ?>! Elias har tagit emot ditt meddelande och svarar så snart vi kan.</p>
+      <p class="thanks__text">Hej <?php echo $name; ?>! Elias har tagit emot ditt meddelande och svarar så snart Jag kan.</p>
 
       <h2 class="thanks__title">Det här skickade du</h2>
       <dl class="thanks__list">
