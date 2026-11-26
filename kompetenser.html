@@ -3,51 +3,52 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="Width=device-width, initial-scale1.0">
-    <title>kontakt - Idris, junior webbutvecklare</title>
-    <meta name="description" content="kontakta idris via e-post, LinkedIn, Github eller kontaktformuläret. Kontaktvägar finns även för Mohammednur och Joab.">
-    <!-- Länk till CSS- och JS-filer (defer JS efter att HTML laddats) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Elias, junior webbutvecklare</title>
+    <meta name="description" content="Kontakta Elias via e-post, LinkedIn, GitHub eller kontaktformuläret.">
+    
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
 
-<!-- Gemensamt sidhuvud och huvudnavigering för samtliga sidor -->
+<!-- Sidhuvud och meny -->
   <header class="site-header">
-    <p class="site-header__name">Idris</p>
+    <p class="site-header__name">Elias</p>
     <nav class="main-nav" aria-label="Huvudmeny">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
-      </ul>
+       <li class="main-nav__item"><a class="main-nav__linkmain-nav__link--active" href="kontakt.html" aria-current="page">Kontakt</a></li>
     </nav>
   </header>
 
   <main>
     <h1 class="page-title">kontakt</h1>
 
+    <h1 class="page-title">Kontakt</h1>
+
+    <!-- Mina kontaktuppgifter -->
     <section class="contact">
       <h2 class="contact__title">Kontaktuppgifter</h2>
       <ul class="contact__list">
-        <li class="contact__item"><a class="contact__link" href="mailto:idris@example.com">Skicka e-post till Elias </a></li>
-        <li class="contact__item"><a class="contact__link" href="https://www.linkedin.com/"> Elias profil på LinkedIn</a></li>
-        <li class="contact__item"><a class="contact__link" href="https://github.com/"> Elias kod på GitHub</a></li>
+        <li class="contact__item"><a class="contact__link" href="mailto:elias@example.com">Skicka e-post till Elias</a></li>
+        <li class="contact__item"><a class="contact__link" href="https://www.linkedin.com/">Elias profil på LinkedIn</a></li>
+        <li class="contact__item"><a class="contact__link" href="https://github.com/">Elias kod på GitHub</a></li>
       </ul>
 
-      <!-- JS: Kopierar e-postadressen i data-email och visar bekräftelse i data-js-target="copy-message" -->
-      <button class="contact__button" type="button" data-js-action="copy" data-email="idris@example.com">Kopiera e-postadressen</button>
+      <!-- Knapp för att kopiera mejladressen -->
+      <button class="contact__button" type="button" data-js-action="copy" data-email="elias@example.com">Kopiera e-postadressen</button>
       <p class="contact__message" data-js-target="copy-message" aria-live="polite"></p>
     </section>
 
-    <!-- Kontaktformulär som skickar POST-data till tack.php -->
+    <!-- Kontaktformulär -->
     <section class="contact-form">
       <h2 class="contact-form__title">Kontaktformulär</h2>
 
       <form class="contact-form__form" action="tack.php" method="post">
-        <!-- for-attributet kopplar etiketten till rätt input-id, medan name används i $_POST -->
         <label class="contact-form__label" for="name">Namn</label>
         <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name">
 
@@ -83,8 +84,8 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p class="site-footer__text">© 2026 Elias </p>
+ <footer class="site-footer">
+    <p class="site-footer__text">&copy; 2026 Elias</p>
   </footer>
 
 </body>
