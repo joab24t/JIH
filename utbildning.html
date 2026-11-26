@@ -1,29 +1,28 @@
 <!DOCTYPE html>
-<!-- Berättar för webbläsaren att dokumentet är skrivet i HTML5 -->
+
 <html lang="sv">
-<!-- lang="sv" talar om för skärmläsare och sökmotorer att sidan är på svenska -->
+
 <head>
     <meta charset="UTF-8">
-    <!-- Anpassar sidans bredd efter skärmen (t.ex. mobil eller dator) -->
-     <meta name="viewport" content="width=device-width, initial-scale="1.0">
-     <!-- Unik sidtitel som visas i webbläsarens flik och på google -->
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
      <title> Utbildning och erfarenhet - Elias</title>
      <meta name="description" content="Elias - utbildning och erfarenhet inom webbutveckling.och tidigare arbetslivserfarenhet.">
      
-     <!-- Kopplar ihop HTML-sidan med CSS-filen-->
+     
      <link rel="stylesheet" href="css/style.css">
-     <!-- Kopplar ihop HTML-sidan med JS-filen (defer = körs först när hela HTML-sidan har laddats)-->
+     
      <script src="js/script.js" defer></script>
 </head>
 
 
 <body>
-  <!-- Allt som syns på webbsidan ligger inuti body -->   
-  <!-- Semantisk tagg för sidans topp/sidhuvud (samma på alla sidor)-->
+  
     <header class="site-header">
         <p class="site-header__name">Elias</p>
 
-        <!-- Semantisk tagg för navigering; aria-label berättar för skärmläsaren vilken meny det är-->
+        
         <nav class="main-nav" aria-label="Huvudmeny">
         <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
@@ -37,19 +36,18 @@
 
   <main>
     
-    <!-- Sidans enda h1-rubrik-->
+
     <h1 class="page title">Utbildning och erfarenhet</h1>
    
-    <!-- section grupperar ihop innehåll som hör ihop tematiskt -->
-    <!-- Klassnamnet "education" är vårt BEM-block för den här delen -->
+    
    
     <section class="education">
-     <!--h2 är nästa steg i rubrikhierakin under h1 -->
+    
         <h2 class="education__title">Utbildning</h2>
-        <!-- Punktlista för utbildningar -->
+        
          <ul class="education__list">
         <li class="education__item">
-          <!-- h3 kommer naturligt under h2 (man hoppar aldrig över en rubriknivå) -->
+          
           <h3 class="education__name">IT säkerhet, högskoleutbildning</h3>
           <p class="education__school">Högskolan Dalarna</p>
           <p class="education__date">2025–2028</p>
@@ -61,7 +59,7 @@
         </li>
     </ul>
  </section>
-<!-- Ny sektion med ett eget BEM-block ("experience") för arbetslivserfarenhet -->
+
 <section class="experience">
     <h2 class="experience__title">Arbetslivserfarenhet</h2>
     <ul class="experience__list">
@@ -80,7 +78,7 @@
     </ul>
 </section>
 </main>
-<!-- Semantisk tagg för sidfot längst ner på sidan (samma på alla sidor)-->
+
  <footer class="site-footer">
     <p class="site-footer__text">© 2026 Elias</p>
   </footer>
