@@ -31,8 +31,8 @@ if (isset($_POST["message"])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tack för ditt meddelande – Idris, junior webbutvecklare</title>
-  <meta name="description" content="Bekräftelse på att ditt meddelande till Idris, Mohammednur och Joab har skickats.">
+  <title>Tack för ditt meddelande – Elias, junior webbutvecklare</title>
+  <meta name="description" content="Bekräftelse på att ditt meddelande till Elias har skickats.">
   <!-- Länk till CSS- och JS-filer (defer kör JS efter att HTML laddats) -->
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
@@ -58,7 +58,7 @@ if (isset($_POST["message"])) {
 
     <!-- Bekräftelsevy som skriver ut sanerade formulärvärden i en beskrivningslista (dl) -->
     <section class="thanks">
-      <p class="thanks__text">Hej <?php echo $name; ?>! Idris, Mohammednur och Joab har tagit emot ditt meddelande och svarar så snart vi kan.</p>
+      <p class="thanks__text">Hej <?php echo $name; ?>! Elias har tagit emot ditt meddelande och svarar så snart vi kan.</p>
 
       <h2 class="thanks__title">Det här skickade du</h2>
       <dl class="thanks__list">
@@ -83,7 +83,7 @@ if (isset($_POST["message"])) {
   </main>
 
   <footer class="site-footer">
-    <p class="site-footer__text">© 2026 Idris, Mohammednur och Joab</p>
+    <p class="site-footer__text">© 2026 Elias</p>
   </footer>
 
 </body>
