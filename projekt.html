@@ -13,16 +13,13 @@
 
   <!-- Sidhuvud och meny -->
   <header class="site-header">
-    <p class="site-header__name">Elias</p>
-    <nav class="main-nav" aria-label="Huvudmeny">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kompetens.html">Kompetens</a></li>
-      </ul>
+   <nav class="main-nav" aria-label="Huvudmeny">
+      <a class="main-nav__link" href="index.html">Om mig</a> |
+      <a class="main-nav__link" href="kompetens.html">Kompetens</a> |
+      <a class="main-nav__link main-nav__link--active" href="projekt.html" aria-current="page">Projekt</a> |
+      <a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a> |
+      <a class="main-nav__link" href="referenser.html">Referenser</a> |
+      <a class="main-nav__link" href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
@@ -30,8 +27,11 @@
     <h1 class="page-title">Projekt</h1>
 
     <section class="filter">
-      <h2 class="filter__title">Filtrera projekt</h2>
-
+     <p class="contact__links">
+        <a class="contact__link" href="mailto:elias@example.com">Skicka e-post till Elias</a> |
+        <a class="contact__link" href="https://www.linkedin.com/">Elias profil på LinkedIn</a> |
+        <a class="contact__link" href="https://github.com/">Elias kod på GitHub</a>
+      </p>
       <!-- Filtrerar projekt med data-category -->
       <button class="filter__button filter__button--active" type="button" data-js-action="filter" data-category="alla">Alla projekt</button>
       <button class="filter__button" type="button" data-js-action="filter" data-category="webb">Webbprojekt</button>
