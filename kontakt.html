@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Elias, junior webbutvecklare</title>
+  <meta name="description" content="Kontakta Elias via e-post, LinkedIn, GitHub eller kontaktformuläret.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <p class="site-header__name">Elias</p>
+    <nav class="main-nav" aria-label="Huvudmeny">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="kompetens.html">Kompetens</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Kontakt</h1>
+
+    <section class="contact">
+      <h2 class="contact__title">Kontaktuppgifter</h2>
+      <ul class="contact__list">
+        <li class="contact__item"><a class="contact__link" href="mailto:elias@example.com">Skicka e-post till Elias</a></li>
+        <li class="contact__item"><a class="contact__link" href="https://www.linkedin.com/">Elias profil på LinkedIn</a></li>
+        <li class="contact__item"><a class="contact__link" href="https://github.com/">Elias kod på GitHub</a></li>
+      </ul>
+
+      <!-- JS: kopierar e-post till urklipp och visar svar i copy-message -->
+      <button class="contact__button" type="button" data-js-action="copy" data-email="elias@example.com">Kopiera e-postadressen</button>
+      <p class="contact__message" data-js-target="copy-message" aria-live="polite"></p>
+    </section>
+
+    <section class="contact-form">
+      <h2 class="contact-form__title">Kontaktformulär</h2>
+
+      <!-- Skickas med POST till tack.php -->
+      <form class="contact-form__form" action="tack.php" method="post">
+        <label class="contact-form__label" for="name">Namn</label>
+        <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name">
+
+        <label class="contact-form__label" for="email">E-post</label>
+        <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email">
+
+        <label class="contact-form__label" for="subject">Ärende</label>
+        <select class="contact-form__select" id="subject" name="subject">
+          <option value="Jobberbjudande">Jobberbjudande</option>
+          <option value="Samarbete">Samarbete</option>
+          <option value="Övrigt">Övrigt</option>
+        </select>
+
+        <fieldset class="contact-form__group">
+          <legend class="contact-form__legend">Vem är du?</legend>
+
+          <input class="contact-form__radio" type="radio" id="role-recruiter" name="role" value="Rekryterare">
+          <label class="contact-form__label" for="role-recruiter">Rekryterare</label>
+
+          <input class="contact-form__radio" type="radio" id="role-student" name="role" value="Student">
+          <label class="contact-form__label" for="role-student">Student</label>
+
+          <input class="contact-form__radio" type="radio" id="role-other" name="role" value="Annat">
+          <label class="contact-form__label" for="role-other">Annat</label>
+        </fieldset>
+
+        <label class="contact-form__label" for="message">Meddelande</label>
+        <textarea class="contact-form__textarea" id="message" name="message" rows="6"></textarea>
+
+        <button class="contact-form__button" type="submit">Skicka meddelandet</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__text">© 2026 Elias</p>
+  </footer>
+
+</body>
+</html>
