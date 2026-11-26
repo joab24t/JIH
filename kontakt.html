@@ -35,7 +35,7 @@
         <li class="contact__item"><a class="contact__link" href="https://github.com/">Elias kod på GitHub</a></li>
       </ul>
 
-      <!-- JS: kopierar e-post till urklipp och visar svar i copy-message -->
+     <!-- Knapp för att kopiera mejladressen -->
       <button class="contact__button" type="button" data-js-action="copy" data-email="elias@example.com">Kopiera e-postadressen</button>
       <p class="contact__message" data-js-target="copy-message" aria-live="polite"></p>
     </section>
@@ -43,7 +43,7 @@
     <section class="contact-form">
       <h2 class="contact-form__title">Kontaktformulär</h2>
 
-      <!-- Skickas med POST till tack.php -->
+       <!-- Själva kontaktformuläret -->
       <form class="contact-form__form" action="tack.php" method="post">
         <label class="contact-form__label" for="name">Namn</label>
         <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name">
