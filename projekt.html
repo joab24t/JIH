@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projekt – Elias, junior webbutvecklare</title>
-  <meta name="description" content="Se projekt som Idris, Mohammednur och Joab har byggt, till exempel webbsidor, ett formulär i PHP och en designskiss.">
-  <!-- Länk till CSS- och JS-filer (defer kör JS efter att HTML laddats) -->
+  <meta name="description" content="Se projekt som Elias har byggt, till exempel webbsidor, ett formulär i PHP och en designskiss.">
+  
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
 
-  <!-- Gemensamt sidhuvud och huvudnavigering för samtliga sidor -->
+  <!-- Sidhuvud och meny -->
   <header class="site-header">
-    <p class="site-header__name">Idris</p>
+    <p class="site-header__name">Elias</p>
     <nav class="main-nav" aria-label="Huvudmeny">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
@@ -31,7 +31,7 @@
     <section class="filter">
       <h2 class="filter__title">Filtrera projekt</h2>
 
-      <!-- JS: Filtrerar projekt i data-js-target="projects" utifrån data-category och markerar vald knapp med filter__button--active -->
+      <!-- Filtrerar projekt med data-category -->
       <button class="filter__button filter__button--active" type="button" data-js-action="filter" data-category="alla">Alla projekt</button>
       <button class="filter__button" type="button" data-js-action="filter" data-category="webb">Webbprojekt</button>
       <button class="filter__button" type="button" data-js-action="filter" data-category="design">Designprojekt</button>
@@ -41,10 +41,10 @@
     <section class="projects" data-js-target="projects" aria-live="polite">
       <h2 class="projects__title">Mina projekt</h2>
 
-      <!-- Fristående projektkort (article) där data-category används för filtrering och project-card--featured är en BEM-modifier -->
+      
       <article class="project-card project-card--featured" data-category="webb">
         <h3 class="project-card__title">Digital portfolio</h3>
-        <p class="project-card__text">En portfolio byggd av Idris,Joab och muhammednur med semantisk HTML, BEM-klasser och JS-krokar. Fokus på tillgänglighet och SEO.</p>
+        <p class="project-card__text">En portfolio byggd av Elias med semantisk HTML, BEM-klasser och JS-krokar. Fokus på tillgänglighet och SEO.</p>
         <p class="project-card__tools">Verktyg: HTML, CSS och PHP</p>
       </article>
 
@@ -63,7 +63,7 @@
   </main>
 
   <footer class="site-footer">
-    <p class="site-footer__text">© 2026 Elias </p>
+    <p class="site-footer__text">© 2026 Elias</p>
   </footer>
 
 </body>
