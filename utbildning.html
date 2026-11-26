@@ -1,88 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="sv">
-
 <head>
-    <meta charset="UTF-8">
-    
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     
-     <title> Utbildning och erfarenhet - Elias</title>
-     <meta name="description" content="Elias - utbildning och erfarenhet inom webbutveckling.och tidigare arbetslivserfarenhet.">
-     
-     
-     <link rel="stylesheet" href="css/style.css">
-     
-     <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tack för ditt meddelande – Elias, junior webbutvecklare</title>
+  <meta name="description" content="Bekräftelse på att ditt meddelande till Elias har skickats.">
+  <!-- Koppling till CSS och JavaScript -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
-
-
 <body>
-  
-    <header class="site-header">
-        <p class="site-header__name">Elias</p>
 
-        
-        <nav class="main-nav" aria-label="Huvudmeny">
-        <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="kompetens.html">Kompetens</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="site-header">
+    <p class="site-header__name">Elias</p>
+    <nav class="main-nav" aria-label="Huvudmeny">
+      <a class="main-nav__link" href="index.html">Om mig</a> |
+      <a class="main-nav__link" href="kompetens.html">Kompetens</a> |
+      <a class="main-nav__link" href="projekt.html">Projekt</a> |
+      <a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a> |
+      <a class="main-nav__link" href="referenser.html">Referenser</a> |
+      <a class="main-nav__link" href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
   <main>
-    
+    <h1 class="page-title">Tack för ditt meddelande!</h1>
 
-    <h1 class="page title">Utbildning och erfarenhet</h1>
-   
-    
-   
-    <section class="education">
-    
-        <h2 class="education__title">Utbildning</h2>
-        
-         <ul class="education__list">
-        <li class="education__item">
-          
-          <h3 class="education__name">IT säkerhet, högskoleutbildning</h3>
-          <p class="education__school">Högskolan Dalarna</p>
-          <p class="education__date">2025–2028</p>
-        </li>
-        <li class="education__item">
-            <h3 class="education__name">Webbutveckling, kurs</h3>
-            <p class="education__school">School of Computers</p>
-            <p class="education__date">2022–2023</p>
-        </li>
-    </ul>
- </section>
+    <section class="thanks">
+      <p class="thanks__text">Hej <?php echo $name; ?>! Jag har tagit emot ditt meddelande och svarar så snart jag kan.</p>
 
-<section class="experience">
-    <h2 class="experience__title">Arbetslivserfarenhet</h2>
-    <ul class="experience__list">
-        <li class="experience__item">
-            <h3 class="experience__name">Butiksmedarbetare</h3>
-            <p class="experience__company">Företag A</p>
-            <p class="experience__date">2022–2024</p>
-            <p class="experience__text">Hjälpte kunder att välja datorer och mobiler och tog hand om butikens sociala medier.</p>
-        </li>
-        <li class="experience__item">
-            <h3 class="experience__name">Sommarjobb som IT</h3>
-            <p class="experience__company">Företag B</p>
-            <p class="experience__date">2018–2020</p>
-            <p class="experience__text">Hjälpte till med att installera och uppdatera datorer och nätverk på kontoret.</p>
-        </li>
-    </ul>
-</section>
-</main>
+      <h2 class="thanks__title">Det här skickade du</h2>
+      <dl class="thanks__list">
+        <dt class="thanks__label">Namn</dt>
+        <dd class="thanks__value"><?php echo $name; ?></dd>
 
- <footer class="site-footer">
+        <dt class="thanks__label">E-post</dt>
+        <dd class="thanks__value"><?php echo $email; ?></dd>
+
+        <dt class="thanks__label">Ärende</dt>
+        <dd class="thanks__value"><?php echo $subject; ?></dd>
+
+        <dt class="thanks__label">Vem du är</dt>
+        <dd class="thanks__value"><?php echo $role; ?></dd>
+
+        <dt class="thanks__label">Meddelande</dt>
+        <dd class="thanks__value"><?php echo $message; ?></dd>
+      </dl>
+
+      <p class="thanks__text"><a class="thanks__link" href="index.html">Tillbaka till startsidan</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <p class="site-footer__text">© 2026 Elias</p>
   </footer>
 
-  </body>
-  </html>
+</body>
+</html>
