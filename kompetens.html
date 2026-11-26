@@ -4,8 +4,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - Elias, junior webbutvecklare</title>
-    <meta name="description" content="Kontakta Elias via e-post, LinkedIn, GitHub eller kontaktformuläret.">
+    <title>Kompetenser - Elias, junior webbutvecklare</title>
+    <meta name="description" content="Läs om Elias kompetenser och erfarenhet inom HTML, CSS, JavaScript, PHP och Git.">
     
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
@@ -17,76 +17,65 @@
     <p class="site-header__name">Elias</p>
     <nav class="main-nav" aria-label="Huvudmeny">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
+     <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
+        <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="kompetenser.html" aria-current="page">Kompetenser</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
-       <li class="main-nav__item"><a class="main-nav__linkmain-nav__link--active" href="kontakt.html" aria-current="page">Kontakt</a></li>
-    </nav>
-  </header>
-
-  <main>
-    <h1 class="page-title">kontakt</h1>
-
-    <h1 class="page-title">Kontakt</h1>
-
-    <!-- Mina kontaktuppgifter -->
-    <section class="contact">
-      <h2 class="contact__title">Kontaktuppgifter</h2>
-      <ul class="contact__list">
-        <li class="contact__item"><a class="contact__link" href="mailto:elias@example.com">Skicka e-post till Elias</a></li>
-        <li class="contact__item"><a class="contact__link" href="https://www.linkedin.com/">Elias profil på LinkedIn</a></li>
-        <li class="contact__item"><a class="contact__link" href="https://github.com/">Elias kod på GitHub</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
       </ul>
+    </nav>   
+  </header>
+<main>
+    <h1 class="page-title">Kompetenser</h1>
 
-      <!-- Knapp för att kopiera mejladressen -->
-      <button class="contact__button" type="button" data-js-action="copy" data-email="elias@example.com">Kopiera e-postadressen</button>
-      <p class="contact__message" data-js-target="copy-message" aria-live="polite"></p>
-    </section>
+    <!-- Tabell över mina kunskaper -->
+    <section class="skills">
+      <h2 class="skills__title">Tekniska kompetenser</h2>
 
-    <!-- Kontaktformulär -->
-    <section class="contact-form">
-      <h2 class="contact-form__title">Kontaktformulär</h2>
-
-      <form class="contact-form__form" action="tack.php" method="post">
-        <label class="contact-form__label" for="name">Namn</label>
-        <input class="contact-form__input" type="text" id="name" name="name" autocomplete="name">
-
-        <label class="contact-form__label" for="email">E-post</label>
-        <input class="contact-form__input" type="email" id="email" name="email" autocomplete="email">
-
-        <label class="contact-form__label" for="subject">Ärende</label>
-        <select class="contact-form__select" id="subject" name="subject">
-          <option value="Jobberbjudande">Jobberbjudande</option>
-          <option value="Samarbete">Samarbete</option>
-          <option value="Övrigt">Övrigt</option>
-        </select>
-
-        <!-- fieldset och legend grupperar radioknapparna för skärmläsare -->
-        <fieldset class="contact-form__group">
-          <legend class="contact-form__legend">Vem är du?</legend>
-
-          <input class="contact-form__radio" type="radio" id="role-recruiter" name="role" value="Rekryterare">
-          <label class="contact-form__label" for="role-recruiter">Rekryterare</label>
-
-          <input class="contact-form__radio" type="radio" id="role-student" name="role" value="Student">
-          <label class="contact-form__label" for="role-student">Student</label>
-
-          <input class="contact-form__radio" type="radio" id="role-other" name="role" value="Annat">
-          <label class="contact-form__label" for="role-other">Annat</label>
-        </fieldset>
-
-        <label class="contact-form__label" for="message">Meddelande</label>
-        <textarea class="contact-form__textarea" id="message" name="message" rows="6"></textarea>
-
-        <button class="contact-form__button" type="submit">Skicka meddelandet</button>
-      </form>
+      <table class="skills-table">
+        <caption class="skills-table__caption">Mina kompetenser och min nivå</caption>
+        <thead class="skills-table__head">
+          <tr class="skills-table__row">
+            <th class="skills-table__heading" scope="col">Kompetens</th>
+            <th class="skills-table__heading" scope="col">Nivå</th>
+            <th class="skills-table__heading" scope="col">Erfarenhet</th>
+          </tr>
+        </thead>
+        <tbody class="skills-table__body">
+          <tr class="skills-table__row">
+            <th class="skills-table__heading" scope="row">HTML</th>
+            <td class="skills-table__cell">Bra</td>
+            <td class="skills-table__cell">1 år</td>
+          </tr>
+          <tr class="skills-table__row">
+            <th class="skills-table__heading" scope="row">CSS</th>
+            <td class="skills-table__cell">Bra</td>
+            <td class="skills-table__cell">1 år</td>
+          </tr>
+          <tr class="skills-table__row">
+            <th class="skills-table__heading" scope="row">JavaScript</th>
+            <td class="skills-table__cell">Grundläggande</td>
+            <td class="skills-table__cell">6 månader</td>
+          </tr>
+          <tr class="skills-table__row">
+            <th class="skills-table__heading" scope="row">PHP</th>
+            <td class="skills-table__cell">Grundläggande</td>
+            <td class="skills-table__cell">3 månader</td>
+          </tr>
+          <tr class="skills-table__row">
+            <th class="skills-table__heading" scope="row">Git och GitHub</th>
+            <td class="skills-table__cell">Grundläggande</td>
+            <td class="skills-table__cell">6 månader</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
+  
 
  <footer class="site-footer">
-    <p class="site-footer__text"> 2026 Elias</p>
-  </footer>
+    <p class="site-footer__text">&copy; 2026 Elias</p>
 
 </body>
 </html>
