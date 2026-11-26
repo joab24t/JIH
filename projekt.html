@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1,0">
+ <title>Projekt - Idris,junior webbutvecklare>/title>
+ <meta name="description" content="Se projekt som Idris, Mahammadnur och Joab har byggt, till exempel webbsidor, ett formulär i PHP och en designskiss.">
+ <!--Länk till CSS- och JS-filer (defer kör JS efter att HTML laddats) -->
+ <link rel="stylesheet" href="css/style.css">
+ <script src="js/script.js" defer></script>
+ </head>
+ <body>
+ 
+  <!-- Gemensamt sidhuvud och huvudnavigering för samtiliga sidor -->
+  <header class="site-header">
+   <p class="site-header__name">Idris</p>
+   <nav class="main-nav" aria-label="Huvudmeny">
+    <ul class="main-nav__list">
+     <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
+     <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
+     <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
+     <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
+     <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
+    </ul>
+   </nav>
+  </header>
+ 
+  <main>
+   <h1 class="page-title">Projekt</h1>
+
+   <section class="filter">
+    <h2 class="filter_title">Filtrera projekt</h2>
+   
+    <!-- JS: Filtrerar projekt i data-js-target=projects" utifrån data-category och markerar vald knapp med filter__button--active -->
+    <button class="filter__button filter__button--active" type="button" data-js-action="filter" data-category="alla">Alla projekt</button>
+    <button class="filter__button" type="button" data-js-action="filter" data-category="webb">Webbprojekt</button>
+    <button class="filter__button" type="button" data-js-action="filter" data-category="design">Designprojekt</button>
+   </section>
+
+   <!-- TARGET där filtrerade projekt visas; aria-live="polite" medelar skärmläsare vid uppdatering -->
+   <section class="projects" data-js-target="projects" aria-live="polite">
+    <h2 class="projects__title">Mina projekt</h2>
+
+   <!--Fristående projektkort (article) där data-category används för filtrering och project-card--featured är en BEM-modifier -->
+   <article class="project-card project-card--featured" data-category="webb">
+    <h3 class="project-card__title">Digital portfolio</h3>
+    <p class="project-card__text">En portfolio byggd av Idris, Mahammadnur och Joab med semantisk HTML, BEM-klasser och JS-krokar. Fokus på tillgänglighet och SEO.</p>
+    <p class="project-card__tools">Verktyg: HTML, CSS och PHP</p>
+   </article>
+
+   <article class="project-card" data-category="webb">
+    <h3 class="project-card__title">Receptsida</h3>
+    <p class="project-card__text">En webbsida av Mahammadnur med recept där varje recept har ingredienser i en lista och instruktioner steg för steg.</p>
+    <p class="project-card__tools">Verktyg: HTML och CSS</p>
+   </article>
+
+   <article class="project-card" data-category="design">
+    <h3 class="project-card__title">Designskiss för ett cafe</h3>
+    <p class="project-card__text">En skiss av Joab för en webbplats till ett lokalt cafe, med fokus på tydlig meny och bra kontrast.</p>
+    <p class="project-card__tools">Verktyg: Figma</p>
+   </article>
+  </section>
+ </main>
+
+ <footer class="site-footer">
+  <p class="site-footer__text">© 2026 Idris, Mahammadnur och Joab</p>
+ </footer>
+
+</body>
+</html>
