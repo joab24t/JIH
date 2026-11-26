@@ -1,0 +1,120 @@
+/* Tomma CSS-selektorer för alla BEM-klasser som finns i HTML-filerna.
+   Inga stilregler här, bara krokar som en CSS-utvecklare kan fylla i. */
+
+/* site-header */
+.site-header { }
+.site-header__name { }
+
+/* main-nav */
+.main-nav { }
+.main-nav__list { }
+.main-nav__item { }
+.main-nav__link { }
+
+/* page-title */
+.page-title { }
+
+/* about */
+.about { }
+.about__title { }
+.about__text { }
+
+/* profile */
+.profile { }
+.profile__image { }
+.profile__caption { }
+
+/* skills */
+.skills { }
+.skills__title { }
+
+/* skills-table */
+.skills-table { }
+.skills-table__caption { }
+.skills-table__head { }
+.skills-table__row { }
+.skills-table__heading { }
+.skills-table__body { }
+.skills-table__cell { }
+
+/* site-footer */
+.site-footer { }
+.site-footer__text { }
+
+/* filter */
+.filter { }
+.filter__title { }
+.filter__button { }
+.filter__button--active { }
+
+/* projects */
+.projects { }
+.projects__title { }
+
+/* project-card */
+.project-card { }
+.project-card--featured { }
+.project-card__title { }
+.project-card__text { }
+.project-card__tools { }
+
+/* education */
+.education { }
+.education__title { }
+.education__list { }
+.education__item { }
+.education__name { }
+.education__school { }
+.education__date { }
+
+/* experience */
+.experience { }
+.experience__title { }
+.experience__list { }
+.experience__item { }
+.experience__role { }
+.experience__company { }
+.experience__date { }
+.experience__text { }
+
+/* references */
+.references { }
+.references__title { }
+.references__text { }
+
+/* reference-card */
+.reference-card { }
+.reference-card__name { }
+.reference-card__quote { }
+.reference-card__text { }
+
+/* contact */
+.contact { }
+.contact__title { }
+.contact__list { }
+.contact__item { }
+.contact__link { }
+.contact__button { }
+.contact__message { }
+
+/* contact-form */
+.contact-form { }
+.contact-form__title { }
+.contact-form__form { }
+.contact-form__label { }
+.contact-form__input { }
+.contact-form__select { }
+.contact-form__group { }
+.contact-form__legend { }
+.contact-form__radio { }
+.contact-form__textarea { }
+.contact-form__button { }
+
+/* thanks */
+.thanks { }
+.thanks__text { }
+.thanks__title { }
+.thanks__list { }
+.thanks__label { }
+.thanks__value { }
+.thanks__link { }
