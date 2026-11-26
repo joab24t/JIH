@@ -1,5 +1,5 @@
 <?php
-// Hämtar POST-data från kontakt.html och sanerar med htmlspecialchars() mot XSS
+// Hämtar och sanerar POST-data från formuläret.
 $name = "";
 if (isset($_POST["name"])) {
     $name = htmlspecialchars($_POST["name"]);
@@ -15,7 +15,7 @@ if (isset($_POST["subject"])) {
     $subject = htmlspecialchars($_POST["subject"]);
 }
 
-// Standardvärde om ingen radioknapp valts i formuläret
+
 $role = "Inget valt";
 if (isset($_POST["role"])) {
     $role = htmlspecialchars($_POST["role"]);
@@ -39,9 +39,9 @@ if (isset($_POST["message"])) {
 </head>
 <body>
 
-  <!-- Gemensamt sidhuvud och huvudnavigering för samtliga sidor -->
+  
   <header class="site-header">
-    <p class="site-header__name">Idris</p>
+    <p class="site-header__name">Elias</p>
     <nav class="main-nav" aria-label="Huvudmeny">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
@@ -56,7 +56,7 @@ if (isset($_POST["message"])) {
   <main>
     <h1 class="page-title">Tack för ditt meddelande!</h1>
 
-    <!-- Bekräftelsevy som skriver ut sanerade formulärvärden i en beskrivningslista (dl) -->
+    
     <section class="thanks">
       <p class="thanks__text">Hej <?php echo $name; ?>! Elias har tagit emot ditt meddelande och svarar så snart vi kan.</p>
 
