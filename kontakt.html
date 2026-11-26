@@ -13,14 +13,12 @@
   <header class="site-header">
     <p class="site-header__name">Elias</p>
     <nav class="main-nav" aria-label="Huvudmeny">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Om mig</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kompetens.html">Kompetens</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="projekt.html">Projekt</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="referenser.html">Referenser</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="kontakt.html">Kontakt</a></li>
-      </ul>
+     <a class="main-nav__link" href="index.html">Om mig</a> |
+      <a class="main-nav__link" href="kompetens.html">Kompetens</a> |
+      <a class="main-nav__link" href="projekt.html">Projekt</a> |
+      <a class="main-nav__link" href="utbildning.html">Utbildning och erfarenhet</a> |
+      <a class="main-nav__link" href="referenser.html">Referenser</a> |
+      <a class="main-nav__link main-nav__link--active" href="kontakt.html" aria-current="page">Kontakt</a>
     </nav>
   </header>
 
@@ -29,11 +27,11 @@
 
     <section class="contact">
       <h2 class="contact__title">Kontaktuppgifter</h2>
-      <ul class="contact__list">
-        <li class="contact__item"><a class="contact__link" href="mailto:elias@example.com">Skicka e-post till Elias</a></li>
-        <li class="contact__item"><a class="contact__link" href="https://www.linkedin.com/">Elias profil på LinkedIn</a></li>
-        <li class="contact__item"><a class="contact__link" href="https://github.com/">Elias kod på GitHub</a></li>
-      </ul>
+      <p class="contact__links">
+        <a class="contact__link" href="mailto:elias@example.com">Skicka e-post till Elias</a> |
+        <a class="contact__link" href="https://www.linkedin.com/">Elias profil på LinkedIn</a> |
+        <a class="contact__link" href="https://github.com/">Elias kod på GitHub</a>
+      </p>
 
      <!-- Knapp för att kopiera mejladressen -->
       <button class="contact__button" type="button" data-js-action="copy" data-email="elias@example.com">Kopiera e-postadressen</button>
